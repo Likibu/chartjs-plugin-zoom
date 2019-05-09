@@ -12,5 +12,3 @@ coverage/*
 
 nbproject/*
 dist/
-chartjs-plugin-zoom.js
-chartjs-plugin-zoom.min.js
