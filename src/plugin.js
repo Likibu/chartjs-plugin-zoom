@@ -616,7 +616,8 @@ var zoomPlugin = {
 			}
 		}
 
-		ctx.rect(chartArea.left, chartArea.top, chartArea.right - chartArea.left, chartArea.bottom - chartArea.top);
+		// Very ugly cut fix (waiting for real solution: https://github.com/chartjs/chartjs-plugin-zoom/issues/177)
+		ctx.rect(chartArea.left, chartArea.top - 20, chartArea.right - chartArea.left, chartArea.bottom - chartArea.top);
 		ctx.clip();
 	},
 
